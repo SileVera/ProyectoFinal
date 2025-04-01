@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('NQyscmsgbFBpxYpd1');
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Sabor a Vera</h1>
+        <div class="submenu">
+            <button id="ver-carrito">🛒 Carrito</button>
+            <div id="carrito" class="carrito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <p id="total">Total: €0.00</p>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <div id="direccion-form">
+                    <h3>Dirección de Entrega</h3>
+                    <input type="text" id="direccion" placeholder="Ingresa tu dirección de casa">
+                </div>
+                <div id="banco-form">
+                    <h3>Datos Bancarios</h3>
+                    <input type="text" id="numero-tarjeta" placeholder="Número de Tarjeta">
+                    <input type="text" id="nombre-titular" placeholder="Nombre del Titular">
+                    <input type="text" id="fecha-expiracion" placeholder="Fecha de Expiración (MM/AA)">
+                    <input type="text" id="cvv" placeholder="CVV">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="menu-container">
+        <div class="menu">
+            <h2>Entrantes</h2>
+            <div class="producto">
+                <img src="imagenes/focaccia.jpg" alt="Producto 1">
+                <div class="producto-texto">
+                    <h3>Focaccia</h3>
+                    <p class="precio">€8.00</p>
+                    <a href="#" class="agregar-carrito" data-id="1">Agregar</a>
+                </div>
+                <img src="imagenes/ensaladaCaprese.jpg" alt="Producto 1">
+                <div class="producto-texto">
+                    <h3>Ensalada Capresse</h3>
+                    <p class="precio">€8.00</p>
+                    <a href="#" class="agregar-carrito" data-id="2">Agregar</a>
+                </div>
+                <img src="imagenes/embutidosB.JPG" alt="Producto 1">
+                <div class="producto-texto">
+                    <h3>Embutidos</h3>
+                    <p class="precio">€12.00</p>
+                    <a href="#" class="agregar-carrito" data-id="3">Agregar</a>
+                </div>
+            </div>
+            <h2>Pastas</h2>
+            <div class="producto">
+                <img src="imagenes/cacioepepe.jpg" alt="Producto 2">
+                <div class="producto-texto">
+                    <h3>Caccio e Peppe</h3>
+                    <p class="precio">€10.00</p>
+                    <a href="#" class="agregar-carrito" data-id="4">Agregar</a>
+                </div>
+                <img src="imagenes/pomodoro.JPG" alt="Producto 2">
+                <div class="producto-texto">
+                    <h3>Pomodoro</h3>
+                    <p class="precio">€9.00</p>
+                    <a href="#" class="agregar-carrito" data-id="5">Agregar</a>
+                </div>
+                <img src="imagenes/carbonara.jpg" alt="Producto 2">
+                <div class="producto-texto">
+                    <h3>Carbonara Tradicional</h3>
+                    <p class="precio">€12.00</p>
+                    <a href="#" class="agregar-carrito" data-id="6">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

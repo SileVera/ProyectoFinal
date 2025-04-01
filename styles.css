@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7DFD8;
+    color: #333128;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #F7DFD8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #8DC84B;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu .navbar ul li {
+    margin-right: 20px;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    color: #333128;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.menu .navbar ul li a:hover {
+    color: #8DC84B;
+}
+
+#menu {
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 15px;
+    right: 80px;
+}
+
+.submenu #carrito {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #4E4B5076;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    min-width: 400px;
+    z-index: 1;
+}
+
+.submenu:hover #carrito {
+    display: block;
+}
+
+.carrito-form {
+    margin-top: 20px;
+}
+
+.carrito-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.carrito-form button {
+    background-color: #8DC84B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-form button:hover {
+    background-color: #7AB43A;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.menu {
+    width: 90%;
+    max-width: 800px;
+}
+
+.menu h2 {
+    text-align: center;
+    color: #333128;
+    margin: 20px 0;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.producto img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto-texto {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.producto-texto h3 {
+    font-size: 20px;
+    color: #333128;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8DC84B;
+}
+
+.agregar-carrito {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8DC84B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sugerencias-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.sugerencias-container input, .sugerencias-container textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sugerencias-container button {
+    background-color: #8DC84B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sugerencias-container button:hover {
+    background-color: #7AB43A;
+}
+
+/* 📱 RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 95%;
+    }
+
+    .producto {
+        padding: 10px;
+    }
+
+    .producto img {
+        max-width: 50%;
+    }
+
+    .producto-texto h3 {
+        font-size: 18px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+}
