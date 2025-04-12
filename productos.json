@@ -1,0 +1,43 @@
+{
+    "Entrantes": [
+      {
+        "id": 1,
+        "nombre": "Focaccia",
+        "precio": 8.00,
+        "imagen": "imagenes/focaccia.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Ensalada Capresse",
+        "precio": 8.00,
+        "imagen": "imagenes/ensaladaCaprese.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Embutidos",
+        "precio": 12.00,
+        "imagen": "imagenes/embutidosB.JPG"
+      }
+    ],
+    "Pastas": [
+      {
+        "id": 4,
+        "nombre": "Caccio e Peppe",
+        "precio": 10.00,
+        "imagen": "imagenes/cacioepepe.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "Pomodoro",
+        "precio": 9.00,
+        "imagen": "imagenes/pomodoro.JPG"
+      },
+      {
+        "id": 6,
+        "nombre": "Carbonara Tradicional",
+        "precio": 12.00,
+        "imagen": "imagenes/carbonara.jpg"
+      }
+    ]
+  }
+  
